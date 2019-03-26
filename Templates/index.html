@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Session Page</title>
+     </head>   
+     <body>
+        <div>
+            <form method="POST">
+            <input type="text"name="username" placeholder="user name">
+            <input type="text"name="firstname" placeholder="first name">   
+            <input type="text"name="lastname" placeholder="last name"> 
+            <input type="text"name="password" placeholder="password"> 
+            <input type="submit">
+        </form>  
+        </div> 
+        {{if .UserName}}
+        <p>Logged In as : {{.UserName}}</p>
+        {{end}}
+    <a href="/bar"> Go to bar</a> 
+     </body>
+ </html>   
